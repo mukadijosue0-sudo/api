@@ -1,0 +1,49 @@
+<div class="page-card">
+    <div class="page-header">
+        <div class="page-header-top">
+            <h1 class="page-title">
+                Nouveau dépôt GitHub
+            </h1>
+            <div class="page-header-actions">
+            </div>
+        </div>
+    </div>
+    <div class="page-body">
+
+
+        <div id="msg" class="erreur"></div>
+
+        <div class="form-group">
+            <label for="nom" class="obligatoire">Nom du dépôt (name)</label>
+            <input id="nom"
+                   class="form-control-custom"
+                   type="text"
+                   required
+                   maxlength="30"
+                   minlength="3"
+                   autocomplete="off">
+        </div>
+
+        <div class="form-group">
+            <label for="description" class="obligatoire">Description</label>
+            <input id="description"
+                   class="form-control-custom"
+                   type="text"
+                   required
+                   maxlength="100"
+                   minlength="3"
+                   autocomplete="off">
+        </div>
+
+        <div class="form-inline-group">
+            <label for="type">Type</label>
+            <select id="type" class="form-select-custom">
+                <option value="0">Public</option>
+                <option value="1">Privé</option>
+            </select>
+        </div>
+
+        <button id="btnAjouter">Créer le référentiel</button>
+    </div>
+</div>
+

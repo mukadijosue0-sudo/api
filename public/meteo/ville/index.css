@@ -1,0 +1,60 @@
+    .fiche {
+        display: grid;
+        grid-template-columns: 175px 1fr; /* Label fixe, champ extensible */
+        margin: 5px auto;
+        padding: 1rem;
+        background: transparent;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #ddd; /* Bordure pour la fiche */
+    }
+
+    .fiche label {
+        font-weight: bold;
+        text-align: left;
+        padding: 0.4rem 1rem 0.4rem 0.4rem;
+    }
+
+    .fiche output {
+        padding: 0.25rem;
+        text-align: left;
+        word-break: break-word;
+        border: 0 ;
+        background-color: transparent;
+    }
+
+    .condition-container {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem; /* espacement entre le texte et l'image */
+    }
+
+    .condition-container output {
+        border: none;
+        background-color: transparent;
+        padding: 0.25rem 0;
+        font-size: 1rem;
+        word-break: break-word;
+    }
+
+    .condition-container img {
+        height: 32px;
+        width: auto;
+        vertical-align: middle;
+    }
+
+    @media (max-width: 600px) {
+        .fiche {
+            grid-template-columns: 1fr; /* Une seule colonne */
+        }
+
+        .fiche label {
+            padding-bottom: 0;
+        }
+
+        .fiche output,
+        .fiche input[type="checkbox"] {
+            margin-bottom: 1em;
+        }
+    }

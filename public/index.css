@@ -1,0 +1,20 @@
+/* lien à l'intérieur des cadres de la page d'accueil */
+
+.lien {
+    display: block;
+    text-align: left;
+    margin-top: 4px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    border: 1px solid #1769aa;
+    background-color: transparent;
+    border-radius: 0.25rem;
+    text-decoration: none;
+}
+
+.lien:hover {
+    background-color: #1769aa;
+    color: #fff;
+}

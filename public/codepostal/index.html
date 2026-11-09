@@ -1,0 +1,38 @@
+<div class="page-card">
+    <div class="page-header">
+        <div class="page-header-top">
+            <h1 class="page-title">
+                Recherche d'une ville à partir du code postal
+            </h1>
+            <div class="page-header-actions">
+            </div>
+        </div>
+    </div>
+    <div class="page-body">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="codePostal" class="obligatoire">Code postal</label>
+                <input id="codePostal"
+                       class="form-control-custom"
+                       pattern="^[0-9]{5}$"
+                       maxlength="5"
+                       minlength="5"
+                       size="5"
+                       required
+                       autocomplete="off">
+            </div>
+
+            <div class="form-group">
+                <label for="ville">Ville</label>
+                <input id="ville"
+                       class="form-control-custom"
+                       required
+                       disabled
+                       autocomplete="off"
+                       list="liste-villes">
+                <!-- La datalist qui alimentera les suggestions du champ ville -->
+                <datalist id="liste-villes"></datalist>
+            </div>
+        </div>
+    </div>
+</div>

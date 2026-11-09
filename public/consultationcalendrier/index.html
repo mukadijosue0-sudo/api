@@ -1,0 +1,48 @@
+<div class="page-card">
+    <div class="page-header">
+        <div class="page-header-top">
+            <h1 class="page-title">
+                Calendrier des épreuves de la Somme
+            </h1>
+            <div class="page-header-actions">
+            </div>
+        </div>
+    </div>
+    <div class="page-body">
+
+        <div id="msg"></div>
+
+        <div class="table-responsive ">
+            <table class="custom-table">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nom & Ville</th>
+                    <th>Date</th>
+                    <th>Distances</th>
+                    <th>Chal.</th>
+                    <th>Label</th>
+                    <th>Organisateur</th>
+                </tr>
+                </thead>
+                <tbody id="lesLignes"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<template id="modeleLigne">
+    <tr>
+        <!-- On place le span directement dans la cellule -->
+        <td><a data-champ="id" class="badge-id" target="_blank" rel="noopener noreferrer"
+               href="https://www.athle.fr/bases/liste.aspx?frmbase=resultats&frmmode=1&frmespace=0&frmcompetition="></a>
+        </td>
+        <td data-champ="nom" class="fw-bold text-primary"></td>
+        <td data-champ="date"></td>
+        <td data-champ="distances"></td>
+        <td data-champ="challenge"></td>
+        <!-- Idem pour le label -->
+        <td><span data-champ="label" class="badge-label"></span></td>
+        <td data-champ="organisateur"></td>
+    </tr>
+</template>

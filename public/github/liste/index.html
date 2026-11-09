@@ -1,0 +1,34 @@
+<div class="page-card">
+    <div class="page-header">
+        <div class="page-header-top">
+            <h1 class="page-title">
+                Mes Dépôts GitHub
+            </h1>
+            <div class="page-header-actions">
+            </div>
+        </div>
+    </div>
+    <div class="page-body">
+        <div class="table-responsive">
+            <table class="custom-table">
+                <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th style="width: 120px;">Type</th>
+                    <th style="width: 55%;" class="masquer">Description</th>
+                </tr>
+                </thead>
+                <tbody id="lesLignes"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Template HTML pour la création dynamique d'une ligne -->
+<template id="ligne-depot-template">
+    <tr>
+        <td class="col-nom font-weight-bold"></td>
+        <td><span class="col-type badge"></span></td>
+        <td class="col-desc masquer"></td>
+    </tr>
+</template>

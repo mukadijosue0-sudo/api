@@ -1,0 +1,9 @@
+# déclaration de la variable d'environnement
+
+
+# Redirection vers le répertoire liste
+RewriteEngine On
+# Rediriger uniquement /github vers /github/liste/
+RewriteRule ^$ /github/liste/ [R=302,L]
+
+

@@ -1,0 +1,48 @@
+<div class="page-card">
+    <header class="page-header">
+        <div class="page-header-top">
+            <h1 class="page-title">
+                Calendrier des épreuves de la Somme
+            </h1>
+            <div class="page-header-actions">
+                <a href="ajout" id="btnAjouter" class="btn btn-danger">Nouvelle épreuve</a>
+            </div>
+        </div>
+    </header>
+    <div class="page-body">
+        <div id="msg"></div>
+
+        <div class="table-responsive ">
+            <table class="custom-table">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>ID</th>
+                    <th>Nom & Ville</th>
+                    <th>Date</th>
+                    <th>Distances</th>
+                    <th>Chal.</th>
+                    <th>Label</th>
+                    <th>Organisateur</th>
+                </tr>
+                </thead>
+                <tbody id="lesLignes"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<template id="modeleLigne">
+    <tr>
+        <td class="actions">
+            <a data-champ="modifier" href="#" title="Modifier l'épreuve">✏️</a>
+            <a data-champ="supprimer" href="#" title="Supprimer l'épreuve">🗑️</a>
+        </td>
+        <td><span data-champ="id" class="badge-id"></span></td>
+        <td data-champ="nom" class="fw-bold text-primary"></td>
+        <td data-champ="date"></td>
+        <td data-champ="distances"></td>
+        <td data-champ="challenge"></td>
+        <td><span data-champ="label" class="badge-label"></span></td>
+        <td data-champ="organisateur"></td>
+    </tr>
+</template>

@@ -1,0 +1,61 @@
+.table-responsive {
+    max-height: 650px; /* Hauteur maximale pour activer le scroll vertical si besoin */
+    overflow-y: auto;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.95rem;
+    color: #334155;
+}
+
+/* En-tête figé (Sticky) */
+.custom-table thead th {
+    position: sticky;
+    top: 0;
+    background-color: #397eef;
+    color: #ffffff;
+    padding: 0.85rem 1rem;
+    font-weight: 600;
+    z-index: 10;
+}
+
+.custom-table tbody td {
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* Effet zébré (alternance des lignes) et survol */
+.custom-table tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+
+
+/* Badges pour Public / Privé */
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.6rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 9999px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.badge-public {
+    background-color: #dcfce7;
+    color: #166534;
+}
+.badge-private {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+/* Gestion de la classe responsive masquer */
+@media (max-width: 768px) {
+    .masquer {
+        display: none;
+    }
+}

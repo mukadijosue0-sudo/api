@@ -1,0 +1,83 @@
+/* Zone de défilement vertical pour bloquer l'en-tête */
+.table-responsive {
+    max-height: 650px;
+    overflow-y: auto;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.95rem;
+    color: #334155;
+}
+
+/* En-tête figé (Sticky) */
+.custom-table thead th {
+    position: sticky;
+    top: 0;
+    background-color: #397eef;
+    color: #ffffff;
+    padding: 0.85rem 1rem;
+    font-weight: 600;
+    z-index: 10;
+}
+
+.custom-table tbody td {
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* Effet zébré (alternance des lignes) et survol */
+.custom-table tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+/* Colonne des actions */
+td.actions {
+    white-space: nowrap;
+}
+
+td.actions a {
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 6px;
+}
+
+/* Badge ID */
+.badge-id {
+    background: #e9ecef;
+    color: #495057;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Badges pour les labels */
+.badge-label {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.badge-or {
+    background-color: #fff4cf;
+    color: #856404;
+    border: 1px solid #ffeba3;
+}
+
+.badge-argent {
+    background-color: #edf1f5;
+    color: #383d41;
+    border: 1px solid #d6d8db;
+}
+
+.badge-bronze {
+    background-color: #f8e5d8;
+    color: #633a18;
+    border: 1px solid #f1cbb0;
+}
+

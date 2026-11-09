@@ -1,0 +1,91 @@
+.form-container-wrapper {
+    margin: 1rem;
+    padding: 2.5rem;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    font-family: system-ui, -apple-system, sans-serif;
+    color: #334155;
+    box-sizing: border-box;
+}
+
+.page-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Style des groupes de champs (Label + Input/Select) */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #475569;
+}
+
+/* Gestion de l'astérisque pour les champs obligatoires */
+.obligatoire::after {
+    content: " *";
+    color: #ef4444;
+}
+
+/* Champs de saisie et listes déroulantes uniformisés */
+.form-control-custom,
+.form-select-custom {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background-color: #f8fafc;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+.form-control-custom:focus,
+.form-select-custom:focus {
+    outline: none;
+    border-color: #3b82f6;
+    background-color: #ffffff;
+}
+
+/* Ligne spécifique pour le type (Label + Select côte à côte en Flexbox) */
+.form-inline-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.75rem;
+}
+
+.form-inline-group label {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #475569;
+    min-width: 50px;
+}
+
+.form-inline-group select {
+    flex: 1;
+    max-width: 200px;
+}
+
+
+#btnAjouter:active {
+    transform: scale(0.99);
+}
+
+/* Zone de message d'erreur */
+.erreur {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+}

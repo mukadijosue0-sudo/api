@@ -1,0 +1,41 @@
+/* Formulaire de modification d'une épreuve */
+#formulaire {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Le numéro FFA n'est pas modifiable */
+#formulaire input[readonly] {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+}
+
+/* Case Challenge */
+#formulaire .champ.ligne-checkbox {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+#formulaire .champ.ligne-checkbox input[type="checkbox"] {
+    flex: 0 0 auto;
+    width: 22px;
+    height: 22px;
+    margin: 0;
+}
+
+#formulaire .champ.ligne-checkbox label {
+    margin: 0;
+}
+
+/* Boutons */
+.zone-boutons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.zone-boutons button {
+    min-width: 160px;
+}

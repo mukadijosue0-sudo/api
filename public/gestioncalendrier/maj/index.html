@@ -1,0 +1,91 @@
+<div class="page-card">
+    <div class="page-header">
+        <div class="page-header-top">
+            <h1 class="page-title">
+                Modification des informations d'une épreuve
+            </h1>
+            <div class="page-header-actions">
+            </div>
+        </div>
+    </div>
+    <div class="page-body">
+        <div id="msg"></div>
+
+        <div class="zone-informations-formulaire">
+
+            <div class="bloc-info">
+                <h2>L'épreuve</h2>
+
+                <div class="champ">
+                    <label for="date" class="obligatoire">Date de l'épreuve</label>
+                    <input id="date" type="date">
+                </div>
+
+                <div class="champ">
+                    <label for="id">Numéro FFA <span class="commentaire">(non modifiable)</span></label>
+                    <input id="id" type="text" disabled>
+                </div>
+
+                <div class="champ">
+                    <label for="nom" class="obligatoire">Nom de l'épreuve</label>
+                    <input id="nom"
+                           type="text"
+                           required
+                           pattern="^(?![\s\-'])[\p{L}0-9'\s\-]+(?<![\s\-'])$"
+                           minlength="3"
+                           maxlength="150">
+                </div>
+
+                <div class="champ">
+                    <label for="ville" class="obligatoire">Ville</label>
+                    <input id="ville"
+                           type="text"
+                           required
+                           pattern="^(?![\s\-'])[\p{L}0-9'\s\-]+(?<![\s\-'])$"
+                           minlength="3"
+                           maxlength="100">
+                </div>
+
+                <div class="champ">
+                    <label for="distances">Distances proposées <span class="commentaire">(facultatif)</span></label>
+                    <input id="distances"
+                           type="text"
+                           pattern="^(?![\s\-',])[\p{L}0-9',\s\-]+(?<![\s\-',])$"
+                           maxlength="50">
+                </div>
+            </div>
+
+            <div class="bloc-info">
+                <h2>Labels et organisation</h2>
+
+                <div class="champ ligne-checkbox">
+                    <input id="challenge" type="checkbox">
+                    <label for="challenge">Épreuve inscrite au Challenge Courses 80</label>
+                </div>
+
+                <div class="champ">
+                    <label for="label">Label FFA</label>
+                    <select id="label">
+                        <option value="Pas de label">Aucun</option>
+                        <option value="Bronze">Bronze</option>
+                        <option value="Argent">Argent</option>
+                        <option value="Or">Or</option>
+                    </select>
+                </div>
+
+                <div class="champ">
+                    <label for="organisateur">Organisateur <span class="commentaire">(facultatif)</span></label>
+                    <input id="organisateur" type="text" maxlength="150">
+                </div>
+
+                <div class="champ">
+                    <label for="email">Email de l'organisateur <span class="commentaire">(facultatif)</span></label>
+                    <input id="email" type="email" maxlength="150">
+                </div>
+            </div>
+
+        </div>
+
+            <button id="btnModifier" class="btn btn-danger">Modifier</button>
+    </div>
+</div>

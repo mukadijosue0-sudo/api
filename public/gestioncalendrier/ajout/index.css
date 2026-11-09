@@ -1,0 +1,25 @@
+/* Formulaire d'ajout d'une épreuve */
+#formulaire {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Le libellé de la case Challenge reste sur la même ligne que la case */
+#formulaire .champ.ligne-checkbox {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+#formulaire .champ.ligne-checkbox input[type="checkbox"] {
+    flex: 0 0 auto;
+    width: 22px;
+    height: 22px;
+    margin: 0;
+}
+
+#formulaire .champ.ligne-checkbox label {
+    margin: 0;
+}
+
+

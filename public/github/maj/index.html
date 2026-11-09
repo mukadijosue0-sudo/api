@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="/css/recherche.css">
+<div class="page-card">
+    <div class="page-header">
+        <div class="page-header-top">
+            <h1 class="page-title">
+                Modification ou suppression d'un dépôt GitHub
+            </h1>
+            <div class="page-header-actions">
+            </div>
+        </div>
+        <div class="page-header-filters">
+            <label for="liste"></label>
+            <select id="liste"></select>
+        </div>
+    </div>
+    <div class="page-body">
+
+        <div id="msg"></div>
+
+        <label for="nom" class="col-form-label obligatoire ">Nom (name)</label>
+        <input id="nom"
+               type="text"
+               required
+               maxlength='30'
+               minlength="3"
+               autocomplete="off">
+        <label for="description" class="">Descritpion</label>
+        <input id="description"
+               type="text"
+               required
+               maxlength='100'
+               minlength="3"
+               autocomplete="off">
+        <div style=" display: flex; align-items: center; gap: 1rem;">
+            <label for="type" style="width: 175px"> Type</label>
+            <select id="type" style="width: 150px">
+                <option value="0">Public</option>
+                <option value="1">Privé</option>
+            </select>
+        </div>
+        <div style=" display: flex; align-items: center; gap: 1rem;">
+            <label for="dateCreation" style="width: 175px">Date création</label>
+            <output id="dateCreation"></output>
+        </div>
+        <div style=" display: flex; align-items: center; gap: 1rem;">
+            <label for="dateModification" style="width: 175px">DateModification</label>
+            <output id="dateModification"></output>
+        </div>
+        <div class="d-flex justify-content-evenly mt-1">
+            <button id='btnModifier' class="btn btn-sm btn-outline-danger"> Modifier</button>
+            <button id='btnSupprimer' class="btn btn-sm btn-outline-danger">Supprimer</button>
+        </div>
+    </div>
+</div>
