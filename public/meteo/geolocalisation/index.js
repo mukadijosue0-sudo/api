@@ -55,8 +55,19 @@ function erreur(error) {
  * @param {object} position la position géographique de l'utilisateur
  */
 function rechercherVille(position) {
-
-
+    const lat = position.coords.latitude;
+    const lng = position.coords.longitude;
+    // reverse geocoding : on récupère la ville à partir des coordonnées
+    appelAjaxSimple({
+        url: "https://api-adresse.data.gouv.fr/reverse/?lat=" + lat + "&lon=" + lng,
+        success: (data) => {
+            if (data && data.features && data.features.length > 0) {
+                rechercherMeteo(data.features[0].properties.city);
+            } else {
+                messageBox("Aucune ville trouvée pour cette position.", 'error');
+            }
+        }
+    });
 }
 
 function rechercherMeteo(ville) {
